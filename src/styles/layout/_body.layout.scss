@@ -1,0 +1,11 @@
+body {
+    font-family: $body-font-family;
+    font-size: $base-font-size;
+    font-feature-settings: "liga" 0;
+    font-kerning: normal;
+    line-height: $base-line-height;
+    color: color(grey-darken-2);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

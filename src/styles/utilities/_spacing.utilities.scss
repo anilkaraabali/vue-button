@@ -1,0 +1,44 @@
+.u-gap-bottom-xsmall {
+    margin-bottom: 1.6rem;
+}
+
+.u-gap-bottom-small {
+    margin-bottom: 2.4rem;
+}
+
+.u-gap-bottom-medium {
+    margin-bottom: 3.2rem;
+}
+
+.u-gap-bottom-large {
+    margin-bottom: 4.8rem;
+}
+
+.u-gap-bottom-xlarge {
+    margin-bottom: 6.4rem;
+}
+
+.u-gap-bottom-reset {
+    margin-bottom: 0;
+}
+
+.u-pad-ends {
+    padding-top: 11.2rem;
+    padding-bottom: 11.2rem;
+}
+
+.u-pad-lg-down {
+    padding-top: 3rem;
+
+    @include respond-above(lg) {
+        padding-top: 0 !important;
+    }
+}
+
+.u-pad-md-down {
+    padding-top: 3rem;
+
+    @include respond-above(md) {
+        padding-top: 0 !important;
+    }
+}

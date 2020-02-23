@@ -1,0 +1,11 @@
+@mixin flex($direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+  
+    // Direction
+    @if $direction == column {
+      flex-direction: column;
+    }
+  }
+  
