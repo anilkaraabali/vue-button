@@ -3,13 +3,13 @@ import {
     Vue,
     Prop,
 } from 'vue-property-decorator';
-import { ButtonType, ButtonSize } from '@/models/enums/index';
+import { ButtonType, ButtonSize, ThemeType } from '@/models/enums/index';
 
 @Component({
     name: 'app-button',
 })
 export default class AppButton extends Vue {
-    @Prop({ default: 'primary', type: String }) protected theme?: string;
+    @Prop({ default: ThemeType.DEFAULT, type: String }) protected theme?: string;
     @Prop({ default: ButtonType.CONTAINED, type: String }) protected type?: string;
     @Prop({ default: ButtonSize.DEFAULT, type: String }) protected size?: string;
     @Prop({ type: Boolean }) protected block?: boolean;
