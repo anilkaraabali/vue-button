@@ -6,6 +6,7 @@ body {
     line-height: $base-line-height;
     color: color(grey-darken-2);
     text-rendering: optimizeLegibility;
+    height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

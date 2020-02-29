@@ -9,7 +9,6 @@
     ]
   },
   "rules": {
-    "no-unused-variable": true,
     "indent": [true, "spaces", 2],
     "interface-name": false,
     "member-access": true,
