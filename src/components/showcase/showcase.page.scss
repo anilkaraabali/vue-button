@@ -1,1 +1,5 @@
 .p-showcase {}
+
+.col > .c-button:not(:last-child) {
+    margin-right: 1.6rem;
+}

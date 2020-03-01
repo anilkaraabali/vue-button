@@ -32,14 +32,18 @@
         transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
     }
 
+    &:not(#{$self}--outlined):not(#{$self}--text):hover::before {
+        opacity: 0.08;
+    }
+
     &:hover::before {
         opacity: 0.04;
     }
 
     &__content {
-        display: flex;
+        display: inherit;
         flex: 1 0 auto;
-        align-items: center;
+        align-items: inherit;
         justify-content: inherit;
         position: relative;
         line-height: normal;
@@ -49,64 +53,21 @@
     /*  ================================================================================
         Size
         ================================================================================ */
-    &#{&}-size--default:not(#{$self}--fab),
-    &#{&}-size--default:not(#{$self}--icon) {
+    &#{&}-size--default:not(#{$self}--fab):not(#{$self}--icon) {
         padding: 0 16px;
         min-width: 64px;
         height: 36px;
     }
 
-    &#{&}-size--small:not(#{$self}--fab),
-    &#{&}-size--small:not(#{$self}--icon) {
+    &#{&}-size--small:not(#{$self}--fab):not(#{$self}--icon) {
         padding: 0 12.4444444444px;
         min-width: 50px;
         height: 28px;
     }
 
-    &#{&}-size--large:not(#{$self}--fab),
-    &#{&}-size--large:not(#{$self}--icon) {
+    &#{&}-size--large:not(#{$self}--fab):not(#{$self}--icon) {
         padding: 0 19.5555555556px;
         min-width: 78px;
-        height: 44px;
-    }
-
-    &#{&}--fab#{&}-size--default {
-        width: 56px;
-        height: 56px;
-    }
-
-    &#{&}--fab#{&}-size--small {
-        width: 40px;
-        height: 40px;
-    }
-
-    &#{&}--fab#{&}-size--x-small {
-        width: 32px;
-        height: 32px;
-    }
-
-    &#{&}--fab#{&}-size--large {
-        width: 64px;
-        height: 64px;
-    }
-
-    &#{&}--icon#{&}-size--default {
-        width: 36px;
-        height: 36px;
-    }
-
-    &#{&}--icon#{&}-size--x-small {
-        width: 20px;
-        height: 20px;
-    }
-
-    &#{&}--icon#{&}-size--small {
-        width: 28px;
-        height: 28px;
-    }
-
-    &#{&}--icon#{&}-size--large {
-        width: 44px;
         height: 44px;
     }
 
@@ -117,6 +78,100 @@
 
     &#{&}-size--small {
         font-size: 1.2rem;
+    }
+
+    &#{&}-size--default:not(#{$self}--fab),
+    &#{&}-size--small:not(#{$self}--fab) {
+        .c-icon {
+            font-size: 1.8rem;
+        }
+    }
+
+    &#{&}-size--default:not(#{$self}--fab):not(#{$self}--icon),
+    &#{&}-size--small:not(#{$self}--fab):not(#{$self}--icon),
+    &#{&}-size--large:not(#{$self}--fab):not(#{$self}--icon) {
+        .c-icon {
+            margin-left: -.4rem;
+            margin-right: .8rem;
+        }
+    }
+
+    /*  Icon
+        ======================================== */
+    &#{&}--icon#{&}-size--default {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    &#{&}--icon#{&}-size--xsmall {
+        width: 2rem;
+        height: 2rem;
+
+        .c-icon {
+            font-size: 1.8rem;
+        }
+    }
+
+    &#{&}--icon#{&}-size--small {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    &#{&}--icon#{&}-size--large {
+        width: 4.4rem;
+        height: 4.4rem;
+
+        .c-icon {
+            font-size: 2.8rem;
+        }
+    }
+
+    &#{&}--icon#{&}-size--xlarge {
+        width: 5.2rem;
+        height: 5.2rem;
+
+        .c-icon {
+            font-size: 3.2rem;
+        }
+    }
+
+    /*  Fab
+        ======================================== */
+    &#{&}--fab#{&}-size--default {
+        width: 5.6rem;
+        height: 5.6rem;
+    }
+
+    &#{&}--fab#{&}-size--xsmall {
+        width: 3.2rem;
+        height: 3.2rem;
+
+        .c-icon {
+            font-size: 1.8rem;
+        }
+    }
+    
+    &#{&}--fab#{&}-size--small {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    &#{&}--fab#{&}-size--large {
+        width: 6.4rem;
+        height: 6.4rem;
+
+        .c-icon {
+            font-size: 2.8rem;
+        }
+    }
+
+    &#{&}--fab#{&}-size--xlarge {
+        width: 7.2rem;
+        height: 7.2rem;
+
+        .c-icon {
+            font-size: 3.2rem;
+        }
     }
 
     /*  ================================================================================
@@ -288,7 +343,34 @@
 
     /*  Icon
         ======================================== */
-    &#{&}--icon {}
+    &#{&}--icon#{&}-theme {
+        &--primary {
+            color: color(primary);
+        }
+
+        &--secondary {
+            color: color(secondary);
+        }
+
+        &--warning {
+            color: color(warning);
+
+        }
+
+        &--danger {
+            color: color(danger);
+
+        }
+
+        &--success {
+            color: color(success);
+        }
+    }
+
+    &#{&}--icon {
+        background-color: transparent;
+        border-color: transparent;
+    }
 
     /*  ================================================================================
         Block
@@ -315,7 +397,8 @@
         border-radius: $border-radius-rounded;
     }
 
-    &#{&}--fab {
+    &#{&}--fab,
+    &#{&}--icon {
         border-radius: $border-radius-circle;
     }
 
@@ -325,9 +408,9 @@
 
     &#{&}--fab,
     &#{&}--icon {
-        padding: 0 !important;
-        min-width: 0 !important;
-        min-height: 0 !important;
+        padding: 0;
+        min-width: 0;
+        min-height: 0;
     }
 
     &#{&}--flat,
@@ -343,5 +426,14 @@
     &#{&}--flat,
     &#{&}--text {
         background-color: transparent;
+    }
+
+    &#{&}--icon,
+    &#{&}--outlined,
+    &#{&}--disabled,
+    &#{&}--text {
+        .c-icon {
+            color: currentColor;
+        }
     }
 }
