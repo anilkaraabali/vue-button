@@ -1,11 +1,9 @@
 @mixin flex($direction: row) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-  
-    // Direction
-    @if $direction == column {
-      flex-direction: column;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @if $direction == column {
+    flex-direction: column;
   }
-  
+}

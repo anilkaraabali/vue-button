@@ -1,12 +1,16 @@
 body {
     font-family: $body-font-family;
     font-size: $base-font-size;
-    font-feature-settings: "liga" 0;
     font-kerning: normal;
     line-height: $base-line-height;
     color: color(grey-darken-2);
-    text-rendering: optimizeLegibility;
     height: 100%;
+     /* Support for IE. */
+     font-feature-settings: "liga" 0;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
+    /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
 }

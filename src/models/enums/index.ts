@@ -1,9 +1,9 @@
-import ButtonSize from './ButtonSize';
+import SizeType from './SizeType';
 import ButtonType from './ButtonType';
 import ThemeType from './ThemeType';
 
 export {
-    ButtonSize,
+    SizeType,
     ButtonType,
     ThemeType,
 };
