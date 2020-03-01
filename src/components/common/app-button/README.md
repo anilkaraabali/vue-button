@@ -6,7 +6,7 @@ This component was created with reference from some top-level UI libraries.
 
 ### **theme**
 
-> **theme:** string, **required:** false, **default:** primary
+> **theme:** string, **required:** false, **default:** ThemeType.DEFAULT
 
 ### **type**
 
@@ -14,7 +14,7 @@ This component was created with reference from some top-level UI libraries.
 
 ### **size**
 
-> **size:** string, **required:** false, **default:** ButtonSize.DEFAULT
+> **size:** string, **required:** false, **default:** SizeType.DEFAULT
 
 ### **label**
 
