@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    letter-spacing: normal;
+    margin-bottom: 16px;
+}
+
+.heading-h1 {
+    font-size: 9.6rem;
+    font-weight: 300;
+    line-height: 9.6rem;
+    letter-spacing: -0.015625em;
+}
+
+.heading-h2 {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 6rem;
+    letter-spacing: -0.0083333333em;
+}
+
+.heading-h3 {
+    font-size: 4.8rem;
+    line-height: 5rem;
+}
+
+.heading-h4 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+    letter-spacing: 0.0073529412em;
+}
+
+.headline {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    letter-spacing: 0.0125em;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.009375em;
+}
+
+.caption {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.0333333333em;
+}
+
+.overline {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1666666667em;
+    text-transform: uppercase;
+}
