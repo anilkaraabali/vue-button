@@ -418,7 +418,7 @@
         border: none;
     }
 
-    &#{&}--outlined {
+    &:not(#{$self}--icon):not(#{$self}--text):not(#{$self}--fab) {
         border: thin solid currentColor;
     }
 
