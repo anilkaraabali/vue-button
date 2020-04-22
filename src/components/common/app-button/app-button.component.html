@@ -1,16 +1,16 @@
 <button
-    :aria-label="ariaLabel"
-    class="c-button" 
-    :class="{
+  :aria-label="ariaLabel"
+  class="c-button"
+  :class="{
         ['c-button--' + type]: type,
-        ['c-button-theme--' + theme]: theme,
+        [theme]: theme,
         ['c-button-size--' + size]: size,
         'c-button--block': block,
         'c-button--disabled': disabled,
     }"
 >
-    <span class="c-button__content">
-        <slot></slot>
-        {{ label }}
-    </span>
+  <span class="c-button__content">
+    <slot></slot>
+    {{ label }}
+  </span>
 </button>
