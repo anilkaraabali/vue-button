@@ -12,4 +12,5 @@ export default class AppButton extends Vue {
   @Prop() protected label: string | number;
   @Prop() protected ariaLabel: string;
   @Prop({ default: false, type: Boolean }) protected disabled: boolean;
+  @Prop() protected on: any;
 }

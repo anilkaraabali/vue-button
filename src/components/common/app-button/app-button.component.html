@@ -1,4 +1,6 @@
 <button
+  v-on="on"
+  @click="$emit('click', this)"
   :aria-label="ariaLabel"
   class="c-button"
   :class="{
