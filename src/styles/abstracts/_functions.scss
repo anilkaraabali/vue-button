@@ -1,0 +1,8 @@
+@function getColor($key, $alpha: 1) {
+  @if map-has-key($colors, $key) {
+    @return rgba(map-get($colors, $key), $alpha);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}

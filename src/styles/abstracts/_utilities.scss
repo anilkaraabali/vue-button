@@ -1,0 +1,75 @@
+.u-gap-bottom-xsmall {
+  margin-bottom: 1.6rem !important;
+}
+
+.u-gap-bottom-small {
+  margin-bottom: 2.4rem !important;
+}
+
+.u-gap-bottom-medium {
+  margin-bottom: 3.2rem !important;
+}
+
+.u-gap-bottom-large {
+  margin-bottom: 4.8rem !important;
+}
+
+.u-gap-bottom-xlarge {
+  margin-bottom: 6.4rem !important;
+}
+
+.u-gap-bottom-reset {
+  margin-bottom: 0 !important;
+}
+
+.u-pad-ends {
+  padding-top: 11.2rem;
+  padding-bottom: 11.2rem;
+}
+
+.u-pad-lg-down {
+  padding-top: 3rem;
+
+  @include respond-above(lg) {
+    padding-top: 0 !important;
+  }
+}
+
+.u-pad-md-down {
+  padding-top: 3rem;
+
+  @include respond-above(md) {
+    padding-top: 0 !important;
+  }
+}
+
+/*  ================================================================================
+    COLORS
+    ================================================================================ */
+.primary {
+  color: getColor(primary);
+}
+
+.secondary {
+  color: getColor(secondary);
+}
+
+.warning {
+  color: getColor(warning);
+}
+
+.danger {
+  color: getColor(danger);
+}
+
+.success {
+  color: getColor(success);
+}
+
+.light {
+  color: getColor(light);
+}
+
+.dark {
+  color: getColor(dark);
+}

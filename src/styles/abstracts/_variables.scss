@@ -1,4 +1,4 @@
-$body-font-family: 'Roboto', sans-serif !default;
+$body-font-family: "Roboto", sans-serif !default;
 $heading-font-family: Helvetica, Arial, sans-serif !default;
 
 $base-font-size: 16px !default;
@@ -7,3 +7,11 @@ $base-line-height: 1.5rem !default;
 $border-radius-root: 4px !default;
 $border-radius-rounded: 28px !default;
 $border-radius-circle: 50% !default;
+
+$breakpoints: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;

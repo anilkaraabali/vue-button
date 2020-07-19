@@ -7,7 +7,7 @@
   position: relative;
   font-family: $heading-font-family;
   font-weight: 500;
-  color: color(light);
+  color: getColor(light);
   letter-spacing: 0.02857em;
   text-indent: 0.02857em;
   text-decoration: none;
@@ -183,28 +183,28 @@
         Theme
       ================================================================================ */
   &.primary {
-    background-color: color(primary);
-    border-color: color(primary);
+    background-color: getColor(primary);
+    border-color: getColor(primary);
   }
 
   &.secondary {
-    background-color: color(secondary);
-    border-color: color(secondary);
+    background-color: getColor(secondary);
+    border-color: getColor(secondary);
   }
 
   &.warning {
-    background-color: color(warning);
-    border-color: color(warning);
+    background-color: getColor(warning);
+    border-color: getColor(warning);
   }
 
   &.danger {
-    background-color: color(danger);
-    border-color: color(danger);
+    background-color: getColor(danger);
+    border-color: getColor(danger);
   }
 
   &.success {
-    background-color: color(success);
-    border-color: color(success);
+    background-color: getColor(success);
+    border-color: getColor(success);
   }
 
   /*  ================================================================================
@@ -214,23 +214,23 @@
   &#{&}--text,
   &#{&}--icon {
     &.primary {
-      color: color(primary);
+      color: getColor(primary);
     }
 
     &.secondary {
-      color: color(secondary);
+      color: getColor(secondary);
     }
 
     &.warning {
-      color: color(warning);
+      color: getColor(warning);
     }
 
     &.danger {
-      color: color(danger);
+      color: getColor(danger);
     }
 
     &.success {
-      color: color(success);
+      color: getColor(success);
     }
   }
 
@@ -245,9 +245,9 @@
         Disabled
       ================================================================================ */
   &#{&}--disabled {
-    color: rgba(color(dark), 0.26) !important;
+    color: getColor(dark, .26) !important;
     border-color: currentColor;
-    background-color: rgba(color(dark), 0.12) !important;
+    background-color: getColor(dark, .12) !important;
     box-shadow: none;
     pointer-events: none;
   }

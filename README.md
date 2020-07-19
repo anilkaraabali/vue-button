@@ -1,4 +1,4 @@
-# vue-button
+# V-Components
 
 ## Project setup
 

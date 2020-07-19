@@ -1,0 +1,67 @@
+.c-icon {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.4rem; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /*  ================================================================================
+        Theme
+        ================================================================================ */
+  &#{&} {
+    &--light {
+      color: getColor(light);
+    }
+
+    &--dark {
+      color: getColor(dark, 0.54);
+    }
+
+    &--primary {
+      color: getColor(primary);
+    }
+
+    &--secondary {
+      color: getColor(secondary);
+    }
+
+    &--warning {
+      color: getColor(warning);
+    }
+
+    &--danger {
+      color: getColor(danger);
+    }
+
+    &--success {
+      color: getColor(success);
+    }
+  }
+
+  /*  ================================================================================
+        Size
+        ================================================================================ */
+  &#{&} {
+    &--xsmall {
+      font-size: 1.8rem;
+    }
+
+    &--small {
+      font-size: 2.4rem;
+    }
+
+    &--large {
+      font-size: 2.8rem;
+    }
+
+    &--xlarge {
+      font-size: 3.2rem;
+    }
+  }
+}

@@ -2,14 +2,14 @@ import {
     Component,
     Vue,
 } from 'vue-property-decorator';
-import AppButton from '@/components/common/app-button/app-button.component.vue';
-import AppIcon from '@/components/common/app-icon/app-icon.component.vue';
+import VBtn from '@/components/common/v-btn/VBtn.vue';
+import VIcon from '@/components/common/v-icon/VIcon.vue';
 
 @Component({
     name: 'page-showcase',
     components: {
-        AppButton,
-        AppIcon,
+        VBtn,
+        VIcon,
     },
 })
 export default class ShowcasePage extends Vue {
